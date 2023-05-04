@@ -27,6 +27,7 @@ struct ShapeUpView: View {
                 Spacer()
                 shape
                 Spacer()
+                resetButton
             }
         }
     }
@@ -42,7 +43,7 @@ struct ShapeUpView_Previews: PreviewProvider {
 extension ShapeUpView {
     var background: some View {
         
-            LinearGradient(colors: [Color.gray, Color.white], startPoint: .trailing, endPoint: .bottomLeading).ignoresSafeArea()
+        LinearGradient(colors: [Color.blue, Color.gray], startPoint: .trailing, endPoint: .bottomLeading).ignoresSafeArea()
     }
     
     var shape: some View {
@@ -58,7 +59,7 @@ extension ShapeUpView {
         } onDecrement: {
             shapeUp.changeWidth(negativeAmount: 10)
         }
-
+        
     }
     
     var heightStepper: some View {
@@ -67,7 +68,7 @@ extension ShapeUpView {
         } onDecrement: {
             shapeUp.changeHeight(negativeAmount: 10)
         }
-
+        
     }
     
     var cornerRadiusStepper: some View {
@@ -76,7 +77,7 @@ extension ShapeUpView {
         } onDecrement: {
             shapeUp.changeCornerRadius(negativeAmount: 1)
         }
-
+        
     }
     
     var colorPickerSection: some View {
@@ -84,10 +85,35 @@ extension ShapeUpView {
     }
     
     var rotationSlider: some View {
-        Stepper("Rotation: \(shapeUp.rotation)") {
-            shapeUp.changeRotation(positiveAmount: 10)
-        } onDecrement: {
-            shapeUp.changeRotation(negativeAmount: 10)
+        VStack {
+            Text("Angle: \(shapeUp.rotation)")
+            
+            Slider(value: $shapeUp.rotation, in: 0...360)
+            {
+                Text("Rotation")
+                
+            } minimumValueLabel: {
+                Text("0")
+                
+            } maximumValueLabel: {
+                Text("360")
+            }
         }
+    }
+    
+    var resetButton: some View {
+        Button {
+            shapeUp.resetValues()
+        } label: {
+            Text("Reset Values")
+                .foregroundColor(.black)
+                .font(.system(size: 28, design: .rounded))
+                .frame(maxWidth: .infinity)
+                .frame(height: 55)
+                .background(Color.orange)
+                .cornerRadius(25)
+                .padding()
+        }
+        
     }
 }
