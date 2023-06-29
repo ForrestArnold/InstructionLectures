@@ -12,8 +12,10 @@ struct HomeView: View {
         NavigationStack {
             List { // only 10 views can go into a list
                 Group {
-                    navigate(to: CheckSplit(), title: "CheckSplit", numberOfLecture: 1)
+                    navigate(to: CheckSplit(), title: "Check Split", numberOfLecture: 1)
                     navigate(to: ShapeUpView(), title: "Shape Up", numberOfLecture: 2)
+                    navigate(to: NavigationViewDemo(), title: "Navigation View Demo", numberOfLecture: 3)
+                    navigate(to: NavigationStackDemo(), title: "Navigation Stack Demo", numberOfLecture: 4)
                 }
             }
             .navigationTitle(Constants.projectTitle)

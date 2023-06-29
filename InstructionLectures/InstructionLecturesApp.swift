@@ -7,11 +7,19 @@
 
 import SwiftUI
 
+import NavigationRouter
+
 @main
 struct InstructionLecturesApp: App {
     var body: some Scene {
         WindowGroup {
-            HomeView()
+//            HomeView()
+//            NavigationStackDemo()
+            NavigationRouter {
+                NavigationRouterDemo()
+                    .navigatesTo(NavigationRouterSettings.self)
+                    .navigatesTo(NavigationRouterGameScreen.self)
+            }
         }
     }
 }

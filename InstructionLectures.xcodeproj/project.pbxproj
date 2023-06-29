@@ -15,6 +15,8 @@
 		3F0F5C6F29F7118F00377422 /* CheckSplit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0F5C6E29F7118F00377422 /* CheckSplit.swift */; };
 		3F16F6BC2A043F740000CBC3 /* ShapeUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F16F6BB2A043F740000CBC3 /* ShapeUpView.swift */; };
 		3F16F6BE2A0440260000CBC3 /* ShapeUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F16F6BD2A0440260000CBC3 /* ShapeUpViewModel.swift */; };
+		3F8BAAD32A42334F002812EE /* NavigationMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8BAAD22A42334F002812EE /* NavigationMethods.swift */; };
+		3F8BAAF52A4255E8002812EE /* NavigationRouter in Frameworks */ = {isa = PBXBuildFile; productRef = 3F8BAAF42A4255E8002812EE /* NavigationRouter */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,7 @@
 		3F0F5C6E29F7118F00377422 /* CheckSplit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckSplit.swift; sourceTree = "<group>"; };
 		3F16F6BB2A043F740000CBC3 /* ShapeUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeUpView.swift; sourceTree = "<group>"; };
 		3F16F6BD2A0440260000CBC3 /* ShapeUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeUpViewModel.swift; sourceTree = "<group>"; };
+		3F8BAAD22A42334F002812EE /* NavigationMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationMethods.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F8BAAF52A4255E8002812EE /* NavigationRouter in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +63,7 @@
 		3F0F5C5829F70B7100377422 /* InstructionLectures */ = {
 			isa = PBXGroup;
 			children = (
+				3F8BAAD12A42333C002812EE /* Navigation */,
 				3F0F5C6929F70CEF00377422 /* Constants */,
 				3F0F5C6829F70CBA00377422 /* ProjectSetup */,
 				3F0F5C6729F70C9900377422 /* InstructorLectures */,
@@ -111,6 +116,14 @@
 			path = ShapeUp;
 			sourceTree = "<group>";
 		};
+		3F8BAAD12A42333C002812EE /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				3F8BAAD22A42334F002812EE /* NavigationMethods.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -127,6 +140,9 @@
 			dependencies = (
 			);
 			name = InstructionLectures;
+			packageProductDependencies = (
+				3F8BAAF42A4255E8002812EE /* NavigationRouter */,
+			);
 			productName = InstructionLectures;
 			productReference = 3F0F5C5629F70B7100377422 /* InstructionLectures.app */;
 			productType = "com.apple.product-type.application";
@@ -155,6 +171,9 @@
 				Base,
 			);
 			mainGroup = 3F0F5C4D29F70B7100377422;
+			packageReferences = (
+				3F8BAAF32A4255E8002812EE /* XCRemoteSwiftPackageReference "SwiftUI-Navigation-Router" */,
+			);
 			productRefGroup = 3F0F5C5729F70B7100377422 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -181,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F8BAAD32A42334F002812EE /* NavigationMethods.swift in Sources */,
 				3F0F5C6D29F70E3400377422 /* HomeView.swift in Sources */,
 				3F16F6BE2A0440260000CBC3 /* ShapeUpViewModel.swift in Sources */,
 				3F0F5C6F29F7118F00377422 /* CheckSplit.swift in Sources */,
@@ -387,6 +407,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3F8BAAF32A4255E8002812EE /* XCRemoteSwiftPackageReference "SwiftUI-Navigation-Router" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Lukas-Simonson/SwiftUI-Navigation-Router.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3F8BAAF42A4255E8002812EE /* NavigationRouter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3F8BAAF32A4255E8002812EE /* XCRemoteSwiftPackageReference "SwiftUI-Navigation-Router" */;
+			productName = NavigationRouter;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3F0F5C4E29F70B7100377422 /* Project object */;
 }
