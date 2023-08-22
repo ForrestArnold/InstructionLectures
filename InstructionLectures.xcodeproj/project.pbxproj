@@ -17,6 +17,11 @@
 		3F16F6BE2A0440260000CBC3 /* ShapeUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F16F6BD2A0440260000CBC3 /* ShapeUpViewModel.swift */; };
 		3F8BAAD32A42334F002812EE /* NavigationMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8BAAD22A42334F002812EE /* NavigationMethods.swift */; };
 		3F8BAAF52A4255E8002812EE /* NavigationRouter in Frameworks */ = {isa = PBXBuildFile; productRef = 3F8BAAF42A4255E8002812EE /* NavigationRouter */; };
+		AA1E23742A93F6C4001D2FFF /* CompaniesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1E23732A93F6C4001D2FFF /* CompaniesView.swift */; };
+		AA7B0ACD2A953FE000094AE7 /* CompaniesTest2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7B0ACC2A953FE000094AE7 /* CompaniesTest2.swift */; };
+		AA7B0ACF2A95419B00094AE7 /* ColorToHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7B0ACE2A95419B00094AE7 /* ColorToHex.swift */; };
+		AA7B0AD32A954C4000094AE7 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7B0AD22A954C4000094AE7 /* Company.swift */; };
+		AA7B0ADE2A955DE500094AE7 /* DoughnutContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AA7B0ADC2A955DE500094AE7 /* DoughnutContainer.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +35,11 @@
 		3F16F6BB2A043F740000CBC3 /* ShapeUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeUpView.swift; sourceTree = "<group>"; };
 		3F16F6BD2A0440260000CBC3 /* ShapeUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeUpViewModel.swift; sourceTree = "<group>"; };
 		3F8BAAD22A42334F002812EE /* NavigationMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationMethods.swift; sourceTree = "<group>"; };
+		AA1E23732A93F6C4001D2FFF /* CompaniesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompaniesView.swift; sourceTree = "<group>"; };
+		AA7B0ACC2A953FE000094AE7 /* CompaniesTest2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompaniesTest2.swift; sourceTree = "<group>"; };
+		AA7B0ACE2A95419B00094AE7 /* ColorToHex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorToHex.swift; sourceTree = "<group>"; };
+		AA7B0AD22A954C4000094AE7 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		AA7B0ADD2A955DE500094AE7 /* DoughnutContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DoughnutContainer.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +73,7 @@
 		3F0F5C5829F70B7100377422 /* InstructionLectures */ = {
 			isa = PBXGroup;
 			children = (
+				AA1E23722A93F5F4001D2FFF /* Companies */,
 				3F8BAAD12A42333C002812EE /* Navigation */,
 				3F0F5C6929F70CEF00377422 /* Constants */,
 				3F0F5C6829F70CBA00377422 /* ProjectSetup */,
@@ -85,6 +96,7 @@
 		3F0F5C6729F70C9900377422 /* InstructorLectures */ = {
 			isa = PBXGroup;
 			children = (
+				AA7B0AD72A955D1100094AE7 /* CoreDataDemo */,
 				3F16F6BA2A043F620000CBC3 /* ShapeUp */,
 				3F0F5C6E29F7118F00377422 /* CheckSplit.swift */,
 			);
@@ -122,6 +134,57 @@
 				3F8BAAD22A42334F002812EE /* NavigationMethods.swift */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		AA1E23722A93F5F4001D2FFF /* Companies */ = {
+			isa = PBXGroup;
+			children = (
+				AA1E23732A93F6C4001D2FFF /* CompaniesView.swift */,
+				AA7B0ACC2A953FE000094AE7 /* CompaniesTest2.swift */,
+				AA7B0ACE2A95419B00094AE7 /* ColorToHex.swift */,
+				AA7B0AD22A954C4000094AE7 /* Company.swift */,
+			);
+			path = Companies;
+			sourceTree = "<group>";
+		};
+		AA7B0AD72A955D1100094AE7 /* CoreDataDemo */ = {
+			isa = PBXGroup;
+			children = (
+				AA7B0ADB2A955D5300094AE7 /* Model */,
+				AA7B0ADA2A955D4700094AE7 /* ViewModel */,
+				AA7B0AD92A955D3C00094AE7 /* View */,
+				AA7B0AD82A955D3000094AE7 /* Managers */,
+			);
+			path = CoreDataDemo;
+			sourceTree = "<group>";
+		};
+		AA7B0AD82A955D3000094AE7 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		AA7B0AD92A955D3C00094AE7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AA7B0ADA2A955D4700094AE7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AA7B0ADB2A955D5300094AE7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AA7B0ADC2A955DE500094AE7 /* DoughnutContainer.xcdatamodeld */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,11 +263,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA1E23742A93F6C4001D2FFF /* CompaniesView.swift in Sources */,
 				3F8BAAD32A42334F002812EE /* NavigationMethods.swift in Sources */,
+				AA7B0ACF2A95419B00094AE7 /* ColorToHex.swift in Sources */,
+				AA7B0ADE2A955DE500094AE7 /* DoughnutContainer.xcdatamodeld in Sources */,
+				AA7B0ACD2A953FE000094AE7 /* CompaniesTest2.swift in Sources */,
 				3F0F5C6D29F70E3400377422 /* HomeView.swift in Sources */,
 				3F16F6BE2A0440260000CBC3 /* ShapeUpViewModel.swift in Sources */,
 				3F0F5C6F29F7118F00377422 /* CheckSplit.swift in Sources */,
 				3F0F5C5A29F70B7100377422 /* InstructionLecturesApp.swift in Sources */,
+				AA7B0AD32A954C4000094AE7 /* Company.swift in Sources */,
 				3F0F5C6B29F70D1B00377422 /* Constants.swift in Sources */,
 				3F16F6BC2A043F740000CBC3 /* ShapeUpView.swift in Sources */,
 			);
@@ -426,6 +494,19 @@
 			productName = NavigationRouter;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		AA7B0ADC2A955DE500094AE7 /* DoughnutContainer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AA7B0ADD2A955DE500094AE7 /* DoughnutContainer.xcdatamodel */,
+			);
+			currentVersion = AA7B0ADD2A955DE500094AE7 /* DoughnutContainer.xcdatamodel */;
+			path = DoughnutContainer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3F0F5C4E29F70B7100377422 /* Project object */;
 }
