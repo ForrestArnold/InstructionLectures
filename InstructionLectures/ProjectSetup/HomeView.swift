@@ -16,6 +16,7 @@ struct HomeView: View {
                     navigate(to: ShapeUpView(), title: "Shape Up", numberOfLecture: 2)
                     navigate(to: NavigationViewDemo(), title: "Navigation View Demo", numberOfLecture: 3)
                     navigate(to: NavigationStackDemo(), title: "Navigation Stack Demo", numberOfLecture: 4)
+                    navigate(to: DoughnutsList(), title: "Doughnut List", numberOfLecture: 5)
                 }
             }
             .navigationTitle(Constants.projectTitle)

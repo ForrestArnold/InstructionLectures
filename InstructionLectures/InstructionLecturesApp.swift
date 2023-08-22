@@ -13,13 +13,13 @@ import NavigationRouter
 struct InstructionLecturesApp: App {
     var body: some Scene {
         WindowGroup {
-//            HomeView()
+            HomeView()
 //            NavigationStackDemo()
-            NavigationRouter {
-                NavigationRouterDemo()
-                    .navigatesTo(NavigationRouterSettings.self)
-                    .navigatesTo(NavigationRouterGameScreen.self)
-            }
+//            NavigationRouter {
+//                NavigationRouterDemo()
+//                    .navigatesTo(NavigationRouterSettings.self)
+//                    .navigatesTo(NavigationRouterGameScreen.self)
+//            }
         }
     }
 }

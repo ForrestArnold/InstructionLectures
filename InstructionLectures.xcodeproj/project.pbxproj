@@ -22,6 +22,9 @@
 		AA7B0ACF2A95419B00094AE7 /* ColorToHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7B0ACE2A95419B00094AE7 /* ColorToHex.swift */; };
 		AA7B0AD32A954C4000094AE7 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7B0AD22A954C4000094AE7 /* Company.swift */; };
 		AA7B0ADE2A955DE500094AE7 /* DoughnutContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AA7B0ADC2A955DE500094AE7 /* DoughnutContainer.xcdatamodeld */; };
+		AA7B0AE02A95617600094AE7 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7B0ADF2A95617600094AE7 /* CoreDataManager.swift */; };
+		AA7B0AE22A9566BB00094AE7 /* DoughnutsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7B0AE12A9566BB00094AE7 /* DoughnutsViewModel.swift */; };
+		AA7B0AE42A95672800094AE7 /* DoughnutsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7B0AE32A95672800094AE7 /* DoughnutsList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,9 @@
 		AA7B0ACE2A95419B00094AE7 /* ColorToHex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorToHex.swift; sourceTree = "<group>"; };
 		AA7B0AD22A954C4000094AE7 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
 		AA7B0ADD2A955DE500094AE7 /* DoughnutContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DoughnutContainer.xcdatamodel; sourceTree = "<group>"; };
+		AA7B0ADF2A95617600094AE7 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		AA7B0AE12A9566BB00094AE7 /* DoughnutsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoughnutsViewModel.swift; sourceTree = "<group>"; };
+		AA7B0AE32A95672800094AE7 /* DoughnutsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoughnutsList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +167,7 @@
 		AA7B0AD82A955D3000094AE7 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				AA7B0ADF2A95617600094AE7 /* CoreDataManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -168,6 +175,7 @@
 		AA7B0AD92A955D3C00094AE7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AA7B0AE32A95672800094AE7 /* DoughnutsList.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -175,6 +183,7 @@
 		AA7B0ADA2A955D4700094AE7 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				AA7B0AE12A9566BB00094AE7 /* DoughnutsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -270,8 +279,11 @@
 				AA7B0ACD2A953FE000094AE7 /* CompaniesTest2.swift in Sources */,
 				3F0F5C6D29F70E3400377422 /* HomeView.swift in Sources */,
 				3F16F6BE2A0440260000CBC3 /* ShapeUpViewModel.swift in Sources */,
+				AA7B0AE02A95617600094AE7 /* CoreDataManager.swift in Sources */,
+				AA7B0AE22A9566BB00094AE7 /* DoughnutsViewModel.swift in Sources */,
 				3F0F5C6F29F7118F00377422 /* CheckSplit.swift in Sources */,
 				3F0F5C5A29F70B7100377422 /* InstructionLecturesApp.swift in Sources */,
+				AA7B0AE42A95672800094AE7 /* DoughnutsList.swift in Sources */,
 				AA7B0AD32A954C4000094AE7 /* Company.swift in Sources */,
 				3F0F5C6B29F70D1B00377422 /* Constants.swift in Sources */,
 				3F16F6BC2A043F740000CBC3 /* ShapeUpView.swift in Sources */,
